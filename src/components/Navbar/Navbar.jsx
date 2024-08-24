@@ -5,9 +5,14 @@ import { RiMenu2Fill } from "react-icons/ri";
 
 const Navbar = () => {
 
+    const navLink = <>
+        <li><a>About me</a></li>
+        <li><a>Skills</a></li>
+        <li><a>Portfolio</a></li>
+    </>
 
     return (
-        <div className="navbar bg-[#0B0B0B] h-16 text-white ">
+        <div className="navbar bg-[#0B0B0B] h-16 text-white lg:px-20">
 
             <div className="navbar-start">
 
@@ -20,9 +25,7 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-black rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 3</a></li>
-                        <li><a>Item 3</a></li>
+                        {navLink}
                     </ul>
                 </div>
 
@@ -36,9 +39,7 @@ const Navbar = () => {
 
             <div className="navbar-end">
                 <ul className="menu menu-horizontal px-1 hidden lg:flex mr-20">
-                    <li><a>About me</a></li>
-                    <li><a>Skills</a></li>
-                    <li><a>Portfolio</a></li> 
+                    {navLink}
                 </ul>
                 <button className="btn btn-sm flex">Download CV</button>
             </div>
