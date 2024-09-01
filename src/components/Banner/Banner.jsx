@@ -8,8 +8,8 @@ const Banner = () => {
 
             <div className="lg:w-5/12 w-full bg-[#D7D7D7] flex flex-col justify-center items-start p-16 ">
                 <h1 className="text-4xl font-bold mb-4">Hi, I am</h1>
-                <h2 className="text-5xl font-extrabold text-gray-800 mb-4">Tomasz Gajda</h2>
-                <p className="text-xl text-gray-600">Front-end Developer / UI Designer</p>
+                <h2 className="text-5xl font-extrabold text-gray-800 mb-4">Sakhawat H</h2>
+                <p className="text-xl text-gray-600">Front-end Developer / React Next.js</p>
 
             </div>
 
