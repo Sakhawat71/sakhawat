@@ -12,7 +12,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar bg-black h-16 text-white lg:px-20">
+        <div className="navbar bg-[#D7D7D7] h-16 text-balck lg:px-20">
 
             <div className="navbar-start">
 
@@ -37,12 +37,27 @@ const Navbar = () => {
             </div>
 
 
-            <div className="navbar-end">
+            <div className="navbar-end bg-red-500 -skew-x-12 translate-x-[27px]">
                 <ul className="menu menu-horizontal px-1 hidden lg:flex mr-20">
                     {navLink}
                 </ul>
                 <button className="btn btn-sm flex">Download CV</button>
             </div>
+
+
+
+            <div className="navbar-end bg-red-600 -skew-x-12 translate-x-[27px]">
+                
+
+                <div className="skew-x-12 flex items-center space-x-4 absolute">
+                    <ul className="menu menu-horizontal px-1 hidden lg:flex mr-20">
+                        {navLink}
+                    </ul>
+                    <button className="btn btn-sm">Download CV</button>
+                </div>
+
+            </div>
+
 
         </div>
     );

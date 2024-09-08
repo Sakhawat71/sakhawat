@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import profileImage from '@/assets/logo1.png';
+import profileImage from '@/assets/dev01.png';
 import Link from 'next/link';
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
@@ -15,7 +15,7 @@ const Banner = () => {
                     <p className="text-2xl font-extrabold text-[#909090]">Front-end Developer / React Next.js</p>
                 </div>
 
-                <div className='flex space-x-6'>
+                <div className='flex space-x-6 '>
                     <Link href="/" className='bg-[#C4C4C4]'>
                         <FaTwitter className='text-2xl w-9 h-9' />
                     </Link>
@@ -29,14 +29,22 @@ const Banner = () => {
 
             </div>
 
-            <div className="lg:w-7/12 -skew-x-12 translate-x-20 bg-black hidden lg:flex justify-center items-center">
-                <Image
-                    src={profileImage}
-                    alt="Profile Image"
-                    width={400}
-                    height={400}
-                    className="rounded-full"
-                />
+            <div className="lg:w-7/12 hidden lg:flex justify-center items-center">
+
+                <div className=" -skew-x-[10deg] translate-x-20 w-full h-full flex justify-center items-center bg-black">
+
+                </div>
+
+                <div className='absolute'>
+                    <Image
+                        src={profileImage}
+                        alt="Profile Image"
+                        width={400}
+                        height={400}
+                        // className=""
+                    />
+                </div>
+
             </div>
         </div>
 
