@@ -8,11 +8,11 @@ const Navbar = () => {
     const navLink = <>
         <li><a>About me</a></li>
         <li><a>Skills</a></li>
-        <li><a>Portfolio</a></li>
+        <li><a>Blog</a></li>
     </>
 
     return (
-        <div className="navbar bg-[#D7D7D7] h-16 text-balck lg:px-20">
+        <div className="navbar h-16 text-balck lg:px-20">
 
             <div className="navbar-start">
 
@@ -36,30 +36,29 @@ const Navbar = () => {
                 </div>
             </div>
 
-
-            {/* <div className="navbar-end bg-red-500 -skew-x-12 translate-x-[27px]">
+            {/* <div className="navbar-end bg-yellow-400 -skew-x-12 translate-x-7">
+    
+            <div className="skew-x-12 flex items-center space-x-4">
                 <ul className="menu menu-horizontal px-1 hidden lg:flex mr-20">
                     {navLink}
                 </ul>
-                <button className="btn btn-sm flex">Download CV</button>
-            </div> */}
+                <button className="btn btn-sm">Download CV</button>
+            </div>
+        </div>
+        */}
 
+            <div className="navbar-end">
 
-
-            <div className="navbar-end bg-red-600 -skew-x-12 translate-x-[27px]">
-                
-
-                <div className="skew-x-12 flex items-center space-x-4 absolute">
+                <div className=" flex items-center space-x-4">
                     <ul className="menu menu-horizontal px-1 hidden lg:flex mr-20">
                         {navLink}
                     </ul>
                     <button className="btn btn-sm">Download CV</button>
                 </div>
-
             </div>
 
 
-        </div>
+        </div >
     );
 };
 
