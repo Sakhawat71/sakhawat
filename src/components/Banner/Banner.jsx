@@ -8,9 +8,9 @@ const Banner = () => {
     return (
         <div className="flex h-screen mx-auto justify-center overflow-hidden font-raleway lg:max-h-[90vh]">
 
-            <div className="lg:w-5/12 w-full bg-[#D7D7D7] flex flex-col  justify-center lg:items-start p-10 md:p-16 space-y-12 lg:pl-28 md:items-center md:text-center lg:text-start ">
+            <div className="lg:w-5/12 w-full bg-[#D7D7D7] flex flex-col  justify-center lg:items-start p-10 md:p-16 space-y-12 lg:pl-28 md:items-center text-center lg:text-start ">
                 <div>
-                    <h1 className="md:text-4xl font-bold mb-4">Hi, I am</h1>
+                    <h1 className="text-xl md:text-4xl font-bold mb-4">Hi, I am</h1>
                     <h2 className="text-4xl md:text-6xl font-extrabold text-black ">Sakhawat H</h2>
                     <p className="md:text-xl font-extrabold text-[#909090]">Front-end Developer / React Next.js</p>
                 </div>
@@ -40,7 +40,6 @@ const Banner = () => {
                         alt="Profile Image"
                         width={400}
                         height={400}
-                        // className=""
                     />
                 </div>
 
