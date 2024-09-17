@@ -24,12 +24,30 @@ const Skills = () => {
     return (
         <div className='gradient-bg h-full my-20 mx-auto w-3/4 font-montserrat'>
 
+
+            <div className='my-10 border-black border-[5px] w-60 mx-auto text-center'>
+                <h2 className='font-bold text-xl tracking-[6px] p-3 uppercase'>Aspirations</h2>
+            </div>
+
+            <div className='grid grid-cols-2'>
+                <div>
+                    <h2>DEVELOPMENT</h2>
+                </div>
+                <div>
+                    <h2 className='uppercase'>cyber security</h2>
+                </div>
+                <div>
+                    <h2 className='uppercase'>Continuous Learning</h2>
+                </div>
+            </div>
+
+
             <div className=' border-black border-[5px] w-60 mx-auto text-center'>
                 <h2 className='font-bold text-xl tracking-[6px] p-3'>SKILLS</h2>
             </div>
 
             <h1 className='font-bold text-xl tracking-widest mt-20'>Front-End</h1>
-            
+
             {/* front end section */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  text-center  gap-10 my-10'>
 
@@ -122,7 +140,7 @@ const Skills = () => {
 
             {/* back end section */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  text-center  gap-10 my-10'>
-                
+
                 <div className=' flex flex-col justify-center items-center space-y-3'>
                     <Image
                         src={nodejs}
@@ -149,7 +167,7 @@ const Skills = () => {
 
             {/* Databases section */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  text-center  gap-10 my-10'>
-                
+
                 <div className=' flex flex-col justify-center items-center space-y-3'>
                     <Image
                         src={mongodb}
@@ -160,7 +178,7 @@ const Skills = () => {
                     <p>MongoDB</p>
                 </div>
 
-                
+
             </div>
 
 
@@ -168,7 +186,7 @@ const Skills = () => {
 
             {/* Tools section */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  text-center  gap-10 my-10'>
-                
+
                 <div className=' flex flex-col justify-center items-center space-y-3'>
                     <Image
                         src={git}
@@ -198,7 +216,7 @@ const Skills = () => {
                     />
                     <p>FIGMA</p>
                 </div>
-                
+
             </div>
 
 
@@ -206,7 +224,7 @@ const Skills = () => {
 
             {/* Hosting & Serverless Platforms section */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  text-center  gap-10 my-10'>
-                
+
                 <div className=' flex flex-col justify-center items-center space-y-3'>
                     <Image
                         src={firebase}
@@ -236,10 +254,8 @@ const Skills = () => {
                     />
                     <p>Netlify</p>
                 </div>
-                
-            </div>
 
-             
+            </div>
 
 
         </div>
