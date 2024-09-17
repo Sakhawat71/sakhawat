@@ -7,6 +7,7 @@ import es6 from "@/assets/es6.png";
 import reactjs from "@/assets/reactjs.png";
 import nextjs from "@/assets/nextjs.png";
 import tailwind from "@/assets/tailwind.png";
+import bootstrap from "@/assets/bootstrap.png";
 import mui from "@/assets/mui.png";
 import nodejs from "@/assets/nodejs.png";
 import express from "@/assets/expressjs.png";
@@ -14,11 +15,14 @@ import mongodb from "@/assets/mongodb.png";
 import git from "@/assets/git.png";
 import vscode from "@/assets/vs-code.png";
 import figma from "@/assets/figma.png";
+import vercel from "@/assets/vercel.png";
+import firebase from "@/assets/firebase.png";
+import netlify from "@/assets/netlify.png";
 
 
 const Skills = () => {
     return (
-        <div className='gradient-bg h-[2000px] mt-10 mx-auto w-3/4 font-montserrat'>
+        <div className='gradient-bg h-full my-20 mx-auto w-3/4 font-montserrat'>
 
             <div className=' border-black border-[5px] w-60 mx-auto text-center'>
                 <h2 className='font-bold text-xl tracking-[6px] p-3'>SKILLS</h2>
@@ -99,6 +103,16 @@ const Skills = () => {
                     <p>MATERIAL UI</p>
                 </div>
 
+                <div className=' flex flex-col justify-center items-center space-y-3'>
+                    <Image
+                        src={bootstrap}
+                        alt='bootstrap'
+                        width={80}
+                        height={80}
+                    />
+                    <p>Bootstrap</p>
+                </div>
+
 
 
             </div>
@@ -129,7 +143,6 @@ const Skills = () => {
                     <p>EXPRESS.JS</p>
                 </div>
             </div>
-
 
 
             <h1 className='font-bold text-xl tracking-widest mt-20'>Databases</h1>
@@ -188,40 +201,40 @@ const Skills = () => {
                 
             </div>
 
-            
-            <h1 className='font-bold text-xl tracking-widest mt-20'>Tools</h1>
 
-            {/* Tools section */}
+            <h1 className='font-bold text-xl tracking-widest mt-20'>Hosting & Server</h1>
+
+            {/* Hosting & Serverless Platforms section */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  text-center  gap-10 my-10'>
                 
                 <div className=' flex flex-col justify-center items-center space-y-3'>
                     <Image
-                        src={git}
-                        alt='github'
+                        src={firebase}
+                        alt='firebase'
                         width={80}
                         height={80}
                     />
-                    <p>GitHub</p>
+                    <p>FIREBASE</p>
                 </div>
 
                 <div className=' flex flex-col justify-center items-center space-y-3'>
                     <Image
-                        src={vscode}
-                        alt='vscode'
+                        src={vercel}
+                        alt='vercel'
                         width={80}
                         height={80}
                     />
-                    <p>VS CODE</p>
+                    <p>VERCEL</p>
                 </div>
 
                 <div className=' flex flex-col justify-center items-center space-y-3'>
                     <Image
-                        src={figma}
-                        alt='figma'
+                        src={netlify}
+                        alt='netlify'
                         width={80}
                         height={80}
                     />
-                    <p>FIGMA</p>
+                    <p>Netlify</p>
                 </div>
                 
             </div>
