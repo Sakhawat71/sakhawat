@@ -56,7 +56,7 @@ const Skills = () => {
                     />
                     <div className='text-center'>
                         <h2 className='font-bold tracking-widest text-xl text-center md:text-start'>DEVELOPMENT</h2>
-                        <p className='text-center md:text-start md:pl-5 pt-3'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, aliquam!</p>
+                        <p className='text-center md:text-start md:pl-5 pt-3'>Aspiring to become a Full Stack Developer, mastering both front-end and back-end technologies.</p>
                     </div>
                 </div>
 
@@ -71,11 +71,11 @@ const Skills = () => {
                     />
                     <div>
                         <h2 className='uppercase font-bold tracking-widest text-xl text-center md:text-start'>cyber security</h2>
-                        <p className='text-center md:text-start md:pl-5 pt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, doloribus.</p>
+                        <p className='text-center md:text-start md:pl-5 pt-3'>Passionate about cybersecurity, eager to explore and learn about protecting digital infrastructures.</p>
                     </div>
                 </div>
 
-                <div className=' mt-10 col-span-2 text-center flex justify-center'>
+                <div className=' mt-10 lg:mt-16 col-span-2 text-center flex justify-center'>
                     <div className='flex flex-col md:flex-row items-center lg:w-1/2'>
                         <Image
                             src={learnImg}
@@ -85,7 +85,7 @@ const Skills = () => {
                         />
                         <div>
                             <h2 className='uppercase font-bold tracking-widest text-xl text-center md:text-start'>Continuous Learning</h2>
-                            <p className='text-center md:text-start md:pl-5 pt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, corrupti?</p>
+                            <p className='text-center md:text-start md:pl-5 pt-3'>Committed to lifelong learning in technology, politics, and history, constantly expanding my knowledge.</p>
                         </div>
                     </div>
                 </div>

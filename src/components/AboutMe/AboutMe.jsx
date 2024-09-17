@@ -4,9 +4,9 @@ const AboutMe = () => {
     return (
         <div className='bg-[#1D1D1D] px-20 py-10 text-white'>
 
-            <h2 className=''>ABOUT ME</h2>
+            <h2 className='mb-5 uppercase'>who am i</h2>
 
-            <p className='font-sans' >I am one of the members of a scientific club that brings together enthusiasts of the Internet and new technologies. At ITberries, we design and develop websites and web applications. Apart from the projects, our biggest undertaking is the Ciemna Strona UX conference, which we are organizing for the sixth time. Working in a club as a Front-End Developer definitely developed my skills in group work and working under time pressure. If you want to know more about us, click the button below! </p>
+            <p className='font-sans' >I`m Sakhawat Hosen, a Front-End Developer with a strong background in Computer Science and Engineering. I specialize in creating sleek, user-friendly web applications using <strong>React.js</strong> and <strong>Next.js</strong>. I thrive on delivering clean, responsive code and staying up-to-date with the latest web technologies. Let`s build something amazing together!</p>
         </div>
     );
 };
