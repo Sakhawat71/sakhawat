@@ -47,22 +47,22 @@ const Skills = () => {
 
             <div className='lg:grid lg:grid-cols-2  text-center my-20 '>
 
-                <div className='flex items-center'>
+                <div className='flex flex-col md:flex-row items-center'>
                     <Image
                         src={devImg}
                         alt='DEVELOPMENT'
                         width={100}
                         height={100}
                     />
-                    <div>
-                        <h2 className='font-bold tracking-widest text-xl text-start'>DEVELOPMENT</h2>
-                        <p className='text-start pl-5 pt-3'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, aliquam!</p>
+                    <div className='text-center'>
+                        <h2 className='font-bold tracking-widest text-xl text-center md:text-start'>DEVELOPMENT</h2>
+                        <p className='text-center md:text-start md:pl-5 pt-3'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, aliquam!</p>
                     </div>
                 </div>
 
 
 
-                <div className='flex items-center mt-10 lg:mt-0'>
+                <div className='flex flex-col md:flex-row items-center mt-10 lg:mt-0'>
                     <Image
                         src={scImage}
                         alt='cyber_security'
@@ -70,12 +70,12 @@ const Skills = () => {
                         height={100}
                     />
                     <div>
-                        <h2 className='uppercase font-bold tracking-widest text-xl text-start'>cyber security</h2>
-                        <p className='text-start pl-5 pt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, doloribus.</p>
+                        <h2 className='uppercase font-bold tracking-widest text-xl text-center md:text-start'>cyber security</h2>
+                        <p className='text-center md:text-start md:pl-5 pt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, doloribus.</p>
                     </div>
                 </div>
 
-                <div className=' border mt-10 col-span-2 text-center flex justify-center'>
+                <div className=' mt-10 col-span-2 text-center flex justify-center'>
                     <div className='flex flex-col md:flex-row items-center lg:w-1/2'>
                         <Image
                             src={learnImg}
@@ -84,8 +84,8 @@ const Skills = () => {
                             height={100}
                         />
                         <div>
-                            <h2 className='uppercase font-bold tracking-widest text-xl text-start'>Continuous Learning</h2>
-                            <p className='text-start pl-5 pt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, corrupti?</p>
+                            <h2 className='uppercase font-bold tracking-widest text-xl text-center md:text-start'>Continuous Learning</h2>
+                            <p className='text-center md:text-start md:pl-5 pt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, corrupti?</p>
                         </div>
                     </div>
                 </div>
