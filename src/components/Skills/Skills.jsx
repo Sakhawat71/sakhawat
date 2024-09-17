@@ -1,48 +1,109 @@
 import React from 'react';
 import "./skills.css";
 import Image from 'next/image';
-import html5 from "@/assets/html.png";
-import css3 from "@/assets/css3.png";
-import es6 from "@/assets/es6.png";
-import reactjs from "@/assets/reactjs.png";
-import nextjs from "@/assets/nextjs.png";
-import tailwind from "@/assets/tailwind.png";
-import bootstrap from "@/assets/bootstrap.png";
-import mui from "@/assets/mui.png";
-import nodejs from "@/assets/nodejs.png";
-import express from "@/assets/expressjs.png";
-import mongodb from "@/assets/mongodb.png";
-import git from "@/assets/git.png";
-import vscode from "@/assets/vs-code.png";
-import figma from "@/assets/figma.png";
-import vercel from "@/assets/vercel.png";
-import firebase from "@/assets/firebase.png";
-import netlify from "@/assets/netlify.png";
 
+import html5 from "@/assets/skills/html.png";
+import css3 from "@/assets/skills/css3.png";
+import es6 from "@/assets/skills/es6.png";
+import reactjs from "@/assets/skills/reactjs.png";
+import nextjs from "@/assets/skills/nextjs.png";
+import tailwind from "@/assets/skills/tailwind.png";
+import bootstrap from "@/assets/skills/bootstrap.png";
+import mui from "@/assets/skills/mui.png";
+import nodejs from "@/assets/skills/nodejs.png";
+import express from "@/assets/skills/expressjs.png";
+import mongodb from "@/assets/skills/mongodb.png";
+import git from "@/assets/skills/git.png";
+import vscode from "@/assets/skills/vs-code.png";
+import figma from "@/assets/skills/figma.png";
+import vercel from "@/assets/skills/vercel.png";
+import firebase from "@/assets/skills/firebase.png";
+import netlify from "@/assets/skills/netlify.png";
+
+import scImage from "@/assets/aspirations/sc.png";
+import devImg from "@/assets/aspirations/dev.png";
+import learnImg from "@/assets/aspirations/learn.png";
+
+import lineImage from '@/assets/ext/line.png'
 
 const Skills = () => {
     return (
         <div className='gradient-bg h-full my-20 mx-auto w-3/4 font-montserrat'>
 
 
-            <div className='my-10 border-black border-[5px] w-60 mx-auto text-center'>
+            {/* Aspirations */}
+            <div className='mt-10 border-black border-[5px] w-72 mx-auto text-center'>
                 <h2 className='font-bold text-xl tracking-[6px] p-3 uppercase'>Aspirations</h2>
             </div>
 
-            <div className='grid grid-cols-2'>
-                <div>
-                    <h2>DEVELOPMENT</h2>
+
+            <Image
+                src={lineImage}
+                alt='line'
+                width={150}
+                height={50}
+                className='my-20 mx-auto'
+            />
+
+            <div className='lg:grid lg:grid-cols-2  text-center my-20 '>
+
+                <div className='flex items-center'>
+                    <Image
+                        src={devImg}
+                        alt='DEVELOPMENT'
+                        width={100}
+                        height={100}
+                    />
+                    <div>
+                        <h2 className='font-bold tracking-widest text-xl text-start'>DEVELOPMENT</h2>
+                        <p className='text-start pl-5 pt-3'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, aliquam!</p>
+                    </div>
                 </div>
-                <div>
-                    <h2 className='uppercase'>cyber security</h2>
+
+
+
+                <div className='flex items-center mt-10 lg:mt-0'>
+                    <Image
+                        src={scImage}
+                        alt='cyber_security'
+                        width={100}
+                        height={100}
+                    />
+                    <div>
+                        <h2 className='uppercase font-bold tracking-widest text-xl text-start'>cyber security</h2>
+                        <p className='text-start pl-5 pt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, doloribus.</p>
+                    </div>
                 </div>
-                <div>
-                    <h2 className='uppercase'>Continuous Learning</h2>
+
+                <div className=' border mt-10 col-span-2 text-center flex justify-center'>
+                    <div className='flex flex-col md:flex-row items-center lg:w-1/2'>
+                        <Image
+                            src={learnImg}
+                            alt='Learning'
+                            width={100}
+                            height={100}
+                        />
+                        <div>
+                            <h2 className='uppercase font-bold tracking-widest text-xl text-start'>Continuous Learning</h2>
+                            <p className='text-start pl-5 pt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, corrupti?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
 
-            <div className=' border-black border-[5px] w-60 mx-auto text-center'>
+            <Image
+                src={lineImage}
+                alt='line'
+                width={150}
+                height={50}
+                className='my-20 mx-auto'
+            />
+
+
+            {/* SKILLS SECTION */}
+
+            <div className=' border-black border-[5px] w-72 mx-auto text-center'>
                 <h2 className='font-bold text-xl tracking-[6px] p-3'>SKILLS</h2>
             </div>
 
