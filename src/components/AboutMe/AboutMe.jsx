@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutMe = () => {
     return (
-        <div className='bg-[#1D1D1D] px-20 py-10 text-white'>
+        <div className='bg-[#1D1D1D] px-10 md:px-20 py-10 text-white'>
 
             <h2 className='mb-5 uppercase'>who am i</h2>
 
