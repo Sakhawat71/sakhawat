@@ -1,6 +1,7 @@
 import AboutMe from '@/components/AboutMe/AboutMe';
 import Banner from '@/components/Banner/Banner';
 import Footer from '@/components/Footer/Footer';
+import Projects from '@/components/Projects/Projects';
 import Skills from '@/components/Skills/Skills';
 import React from 'react';
 
@@ -13,6 +14,7 @@ const HomePage = () => {
             <Banner />
             <AboutMe />
             <Skills />
+            <Projects />
             <Footer />
         </div>
     );

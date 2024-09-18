@@ -34,7 +34,7 @@ const Banner = () => {
                 <div className=" -skew-x-[10deg] translate-x-20 w-full h-full flex justify-center items-center bg-black">
                 </div>
 
-                <div className='absolute'>
+                <div className='absolute bottom-0'>
                     <Image
                         src={profileImage}
                         alt="Profile Image"
