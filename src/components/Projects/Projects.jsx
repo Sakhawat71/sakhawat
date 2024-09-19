@@ -9,13 +9,13 @@ const Projects = () => {
     return (
         <div>
             <Parallax
-                bgImage="https://i.ibb.co.com/bXt4CJq/para.jpg"
+                bgImage="https://i.ibb.co.com/pXcCCV3/assignment-5.jpg"
                 strength={200}
-                className='h-[120px] md:h-[300px] lg:h-[500px]'
+                className='h-[120px] md:h-[300px] lg:h-[350px]'
             >
-                <div className='h-[500px] flex items-center'>
+                <div className='h-[350px] flex items-center'>
                     <div className=' border-black border-[5px] w-72 mx-auto text-center '>
-                        <h2 className='text-white font-bold text-xl tracking-[6px] p-3 uppercase ' >Aspirations</h2>
+                        <h2 className='text-white font-bold text-xl tracking-[6px] p-3 uppercase ' >PORTFOLIO</h2>
                     </div>
                 </div>
             </Parallax>
