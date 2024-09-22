@@ -22,12 +22,29 @@ const Projects = () => {
                 </div>
             </Parallax>
 
-            <div className=' flex items-center justify-center'>
-                <div role="tablist" className="tabs tabs-bordered py-10 ">
+            {/* <div className=' flex items-center justify-center '>
 
-                    <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="ALL" />
+                <div role="tablist" className="tabs tabs-bordered py-10 w-full justify-center  border-red-600 border-2">
 
-                    <div role="tabpanel" className="tab-content p-10">Tab content 1</div>
+                    <input
+                        type="radio"
+                        name="my_tabs_1"
+                        role="tab"
+                        className="tab"
+                        aria-label="ALL"
+                        defaultChecked
+                    />
+
+                    <div role="tabpanel" className="tab-content p-10 border-black mx-auto">
+
+                        <div className='h-96 w-full bg-white grid grid-cols-3 gap-10'>
+                            <p>hello</p>
+                            <p>hi</p>
+                            <p>ik</p>
+                        </div>
+
+
+                    </div>
 
                     <input
                         type="radio"
@@ -35,43 +52,86 @@ const Projects = () => {
                         role="tab"
                         className="tab"
                         aria-label="React.js"
-                        defaultChecked
                     />
 
                     <div role="tabpanel" className="tab-content p-10">Tab content 2</div>
 
-                    <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="JavaScript" />
+                    <input
+                        type="radio"
+                        name="my_tabs_1"
+                        role="tab"
+                        className="tab"
+                        aria-label="JavaScript"
+                    />
 
                     <div role="tabpanel" className="tab-content p-10">Tab content 3</div>
 
-                    <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="HTML" />
+                    <input
+                        type="radio"
+                        name="my_tabs_1"
+                        role="tab"
+                        className="tab"
+                        aria-label="HTML"
+                    />
 
                     <div role="tabpanel" className="tab-content p-10">Tab content 4</div>
                 </div>
-            </div>
+            </div> */}
+            
 
 
+            <div className="w-full my-20 ">
+                <Tabs >
+                    <TabList className="flex justify-center space-x-4 border-b-2  w-full cursor-pointer">
+                        
+                        <Tab className="border-red-500">
+                            ALL
+                        </Tab>
 
-            <div className='flex justify-center'>
-                <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-                    <TabList>
-                        <Tab>one</Tab>
-                        <Tab>two</Tab>
-                        <Tab>three</Tab>
+                        <Tab className={({ selected }) =>
+                            `w-1/4 text-center px-4 py-2 font-semibold cursor-pointer transition-all duration-300 ease-in-out 
+        ${selected ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-600 hover:text-blue-500"}`
+                        }>
+                            React.js
+                        </Tab>
+
+                        <Tab className={({ selected }) =>
+                            `w-1/4 text-center px-4 py-2 font-semibold cursor-pointer transition-all duration-300 ease-in-out 
+        ${selected ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-600 hover:text-blue-500"}`
+                        }>
+                            JavaScript
+                        </Tab>
+
+                        <Tab className={({ selected }) =>
+                            `w-1/4 text-center px-4 py-2 font-semibold cursor-pointer transition-all duration-300 ease-in-out 
+        ${selected ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-600 hover:text-blue-500"}`
+                        }>
+                            HTML/CSS
+                        </Tab>
+
                     </TabList>
 
-                    <TabPanel>
-                        <h2>hello world 1</h2>
-                    </TabPanel>
-                    <TabPanel>
-                        <h2>hello world 2</h2>
-                    </TabPanel>
-                    <TabPanel>
-                        <h2>hello world 3</h2>
-                    </TabPanel>
-
+                    <div className="mt-8 px-4 bg-gray-50 w-full">
+                        <TabPanel>
+                            <h2 className="text-xl font-semibold">Welcome to the ALL section</h2>
+                            <p>Here you can see all the content from React.js, JavaScript, and HTML/CSS sections combined.</p>
+                        </TabPanel>
+                        <TabPanel>
+                            <h2 className="text-xl font-semibold">React.js Content</h2>
+                            <p>This section showcases React.js-related content and tutorials.</p>
+                        </TabPanel>
+                        <TabPanel>
+                            <h2 className="text-xl font-semibold">JavaScript Content</h2>
+                            <p>Here, you`ll find JavaScript-related topics, tips, and tricks.</p>
+                        </TabPanel>
+                        <TabPanel>
+                            <h2 className="text-xl font-semibold">HTML/CSS Content</h2>
+                            <p>Explore tutorials and resources about HTML and CSS for web development.</p>
+                        </TabPanel>
+                    </div>
                 </Tabs>
             </div>
+
 
 
         </div>
