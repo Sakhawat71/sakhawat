@@ -77,45 +77,79 @@ const Projects = () => {
                     <div role="tabpanel" className="tab-content p-10">Tab content 4</div>
                 </div>
             </div> */}
-            
+
 
 
             <div className="w-full my-20 ">
                 <Tabs >
                     <TabList className="flex justify-center space-x-4 border-b-2  w-full cursor-pointer">
-                        
-                        <Tab className="border-red-500">
+
+                        <Tab >
                             ALL
                         </Tab>
 
-                        <Tab className={({ selected }) =>
-                            `w-1/4 text-center px-4 py-2 font-semibold cursor-pointer transition-all duration-300 ease-in-out 
-        ${selected ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-600 hover:text-blue-500"}`
-                        }>
+                        <Tab >
                             React.js
                         </Tab>
 
-                        <Tab className={({ selected }) =>
-                            `w-1/4 text-center px-4 py-2 font-semibold cursor-pointer transition-all duration-300 ease-in-out 
-        ${selected ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-600 hover:text-blue-500"}`
-                        }>
+                        <Tab >
                             JavaScript
                         </Tab>
 
-                        <Tab className={({ selected }) =>
-                            `w-1/4 text-center px-4 py-2 font-semibold cursor-pointer transition-all duration-300 ease-in-out 
-        ${selected ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-600 hover:text-blue-500"}`
-                        }>
+                        <Tab >
                             HTML/CSS
                         </Tab>
 
                     </TabList>
 
                     <div className="mt-8 px-4 bg-gray-50 w-full">
+
                         <TabPanel>
-                            <h2 className="text-xl font-semibold">Welcome to the ALL section</h2>
-                            <p>Here you can see all the content from React.js, JavaScript, and HTML/CSS sections combined.</p>
+
+                            <div className='grid grid-cols-3 gap-2'>
+
+                                <div className="card card-compact bg-base-100  shadow-xl">
+                                    <figure>
+                                        <img
+                                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                                            alt="Shoes" />
+                                    </figure>
+                                    <div className="card-body">
+                                        <h2 className="card-title">Shoes!</h2>
+                                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                                    </div>
+                                </div>
+
+                                <div className="card card-compact bg-base-100  shadow-xl">
+                                    <figure>
+                                        <img
+                                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                                            alt="Shoes" />
+                                    </figure>
+                                    <div className="card-body">
+                                        <h2 className="card-title">Shoes!</h2>
+                                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                                    </div>
+                                </div>
+
+                                <div className="card card-compact bg-base-100  shadow-xl">
+                                    <figure>
+                                        <img
+                                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                                            alt="Shoes" />
+                                    </figure>
+                                    <div className="card-body">
+                                        <h2 className="card-title">Shoes!</h2>
+                                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                                    
+                                    </div>
+                                </div>
+
+
+                            </div>
+        
                         </TabPanel>
+
                         <TabPanel>
                             <h2 className="text-xl font-semibold">React.js Content</h2>
                             <p>This section showcases React.js-related content and tutorials.</p>
