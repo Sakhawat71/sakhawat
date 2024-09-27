@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 import { Parallax } from 'react-parallax';
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
 import "react-tabs/style/react-tabs.css";
+import liveSite from '@/assets/card/live.png';
+import Image from 'next/image';
+import Link from 'next/link';
+import AllProjects from '../SkillsPorjects/AllProjects';
 
 const Projects = () => {
 
@@ -21,63 +25,6 @@ const Projects = () => {
                     </div>
                 </div>
             </Parallax>
-
-            {/* <div className=' flex items-center justify-center '>
-
-                <div role="tablist" className="tabs tabs-bordered py-10 w-full justify-center  border-red-600 border-2">
-
-                    <input
-                        type="radio"
-                        name="my_tabs_1"
-                        role="tab"
-                        className="tab"
-                        aria-label="ALL"
-                        defaultChecked
-                    />
-
-                    <div role="tabpanel" className="tab-content p-10 border-black mx-auto">
-
-                        <div className='h-96 w-full bg-white grid grid-cols-3 gap-10'>
-                            <p>hello</p>
-                            <p>hi</p>
-                            <p>ik</p>
-                        </div>
-
-
-                    </div>
-
-                    <input
-                        type="radio"
-                        name="my_tabs_1"
-                        role="tab"
-                        className="tab"
-                        aria-label="React.js"
-                    />
-
-                    <div role="tabpanel" className="tab-content p-10">Tab content 2</div>
-
-                    <input
-                        type="radio"
-                        name="my_tabs_1"
-                        role="tab"
-                        className="tab"
-                        aria-label="JavaScript"
-                    />
-
-                    <div role="tabpanel" className="tab-content p-10">Tab content 3</div>
-
-                    <input
-                        type="radio"
-                        name="my_tabs_1"
-                        role="tab"
-                        className="tab"
-                        aria-label="HTML"
-                    />
-
-                    <div role="tabpanel" className="tab-content p-10">Tab content 4</div>
-                </div>
-            </div> */}
-
 
 
             <div className="w-full my-20 ">
@@ -102,11 +49,11 @@ const Projects = () => {
 
                     </TabList>
 
-                    <div className="mt-8 px-4 bg-gray-50 w-full">
+                    <div className="mt-8 px-4 bg-[#D6D6D6] w-full">
 
                         <TabPanel>
 
-                            <div className='grid grid-cols-3 gap-2'>
+                            <div className='grid grid-cols-3 gap-2 bg-[#D6D6D6]'>
 
                                 <div className="card card-compact bg-base-100  shadow-xl">
                                     <figure>
@@ -117,6 +64,16 @@ const Projects = () => {
                                     <div className="card-body">
                                         <h2 className="card-title">Shoes!</h2>
                                         <p>If a dog chews shoes whose shoes does he choose?</p>
+                                    </div>
+                                    <div className="card-actions justify-between py-5 px-5">
+
+                                        <Link target='_blank' href={"/hello"} className="badge  cursor-pointer">
+                                            <Image src={liveSite} width={60} height={40} alt='livelink' />
+                                        </Link>
+
+                                        <Link target='_blank' href={"/hello"} className="badge  cursor-pointer">
+                                            <Image src={liveSite} width={60} height={40} alt='livelink' />
+                                        </Link>
                                     </div>
                                 </div>
 
@@ -141,23 +98,26 @@ const Projects = () => {
                                     <div className="card-body">
                                         <h2 className="card-title">Shoes!</h2>
                                         <p>If a dog chews shoes whose shoes does he choose?</p>
-                                    
+
                                     </div>
                                 </div>
 
 
                             </div>
-        
+
                         </TabPanel>
 
                         <TabPanel>
-                            <h2 className="text-xl font-semibold">React.js Content</h2>
-                            <p>This section showcases React.js-related content and tutorials.</p>
+                
+                            <AllProjects />
+                
                         </TabPanel>
+                
                         <TabPanel>
                             <h2 className="text-xl font-semibold">JavaScript Content</h2>
                             <p>Here, you`ll find JavaScript-related topics, tips, and tricks.</p>
                         </TabPanel>
+                
                         <TabPanel>
                             <h2 className="text-xl font-semibold">HTML/CSS Content</h2>
                             <p>Explore tutorials and resources about HTML and CSS for web development.</p>
