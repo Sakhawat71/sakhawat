@@ -7,6 +7,7 @@ import liveSite from '@/assets/card/live.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import AllProjects from '../SkillsPorjects/AllProjects';
+import Reactjs from '../SkillsPorjects/Reactjs';
 
 const Projects = () => {
 
@@ -53,7 +54,7 @@ const Projects = () => {
 
                         <TabPanel>
 
-                            <div className='grid grid-cols-3 gap-2 bg-[#D6D6D6]'>
+                            {/* <div className='grid grid-cols-3 gap-2 bg-[#D6D6D6]'>
 
                                 <div className="card card-compact bg-base-100  shadow-xl">
                                     <figure>
@@ -103,13 +104,14 @@ const Projects = () => {
                                 </div>
 
 
-                            </div>
+                            </div> */}
+                            <AllProjects />
 
                         </TabPanel>
 
                         <TabPanel>
                 
-                            <AllProjects />
+                            <Reactjs />
                 
                         </TabPanel>
                 
