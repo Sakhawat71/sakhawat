@@ -30,9 +30,8 @@ const Projects = () => {
 
             <div className="w-full my-20">
                 <Tabs >
-                    <TabList 
-                    className="relative flex justify-center space-x-8 w-full border-b border-gray-300 "
-                    // className="flex justify-center space-x-4 border-b-2  w-full cursor-pointer bg-black"
+                    <TabList
+                        className="relative flex justify-center space-x-8 w-full border-b border-gray-300 "
                     >
 
                         <Tab>
@@ -64,11 +63,11 @@ const Projects = () => {
                         </TabPanel>
 
                         <TabPanel>
-                            
+                            <AllProjects />
                         </TabPanel>
 
                         <TabPanel>
-                            
+                            <AllProjects />
                         </TabPanel>
                     </div>
                 </Tabs>
