@@ -6,33 +6,33 @@ import { Carousel } from "react-responsive-carousel";
 import liveSite from '@/assets/card/live.png';
 import gitHub from '@/assets/card/github.png';
 
-const SkillCart = ({project}) => {
+const SkillCart = ({ project }) => {
 
     // console.log(project)
-    
 
     return (
         <div className="card card-compact bg-base-100 shadow-xl rounded-lg overflow-hidden ">
-            <figure className="w-full">
+            <figure className="relative w-full ">
                 <Carousel
-                    showThumbs={false} 
+                    showThumbs={false}
                     infiniteLoop={true}
                     autoPlay={true}
-                    interval={2500}
-                    showStatus={false} 
+                    interval={3000}
+                    showStatus={false}
                     stopOnHover={true}
                     dynamicHeight={true}
                 >
                     {project?.images?.map((image, index) => (
-                        <div key={index}>
+                        <div key={index} className="relative">
                             <Image
                                 src={image.src}
                                 alt={image.alt}
                                 layout="responsive"
                                 width={100}
                                 height={100}
-                                className=" w-full h-48"
+                                className="w-full h-48 object-cover"
                             />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-75"></div>
                         </div>
                     ))}
                 </Carousel>
