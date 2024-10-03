@@ -14,7 +14,7 @@ const Projects = () => {
     const [tabIndex, setTabIndex] = useState(0);
 
     return (
-        <div className='my-20'>
+        <div className='mt-20 '>
             <Parallax
                 bgImage="https://i.ibb.co.com/pXcCCV3/assignment-5.jpg"
                 strength={200}
@@ -28,11 +28,14 @@ const Projects = () => {
             </Parallax>
 
 
-            <div className="w-full my-20 ">
+            <div className="w-full my-20">
                 <Tabs >
-                    <TabList className="flex justify-center space-x-4 border-b-2  w-full cursor-pointer">
+                    <TabList 
+                    className="relative flex justify-center space-x-8 w-full border-b border-gray-300 "
+                    // className="flex justify-center space-x-4 border-b-2  w-full cursor-pointer bg-black"
+                    >
 
-                        <Tab >
+                        <Tab>
                             ALL
                         </Tab>
 
@@ -50,79 +53,22 @@ const Projects = () => {
 
                     </TabList>
 
-                    <div className="mt-8 px-4 bg-[#D6D6D6] w-full">
+                    <div className="mt-8 px-4 w-full">
 
                         <TabPanel>
-
-                            {/* <div className='grid grid-cols-3 gap-2 bg-[#D6D6D6]'>
-
-                                <div className="card card-compact bg-base-100  shadow-xl">
-                                    <figure>
-                                        <img
-                                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                            alt="Shoes" />
-                                    </figure>
-                                    <div className="card-body">
-                                        <h2 className="card-title">Shoes!</h2>
-                                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                                    </div>
-                                    <div className="card-actions justify-between py-5 px-5">
-
-                                        <Link target='_blank' href={"/hello"} className="badge  cursor-pointer">
-                                            <Image src={liveSite} width={60} height={40} alt='livelink' />
-                                        </Link>
-
-                                        <Link target='_blank' href={"/hello"} className="badge  cursor-pointer">
-                                            <Image src={liveSite} width={60} height={40} alt='livelink' />
-                                        </Link>
-                                    </div>
-                                </div>
-
-                                <div className="card card-compact bg-base-100  shadow-xl">
-                                    <figure>
-                                        <img
-                                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                            alt="Shoes" />
-                                    </figure>
-                                    <div className="card-body">
-                                        <h2 className="card-title">Shoes!</h2>
-                                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                                    </div>
-                                </div>
-
-                                <div className="card card-compact bg-base-100  shadow-xl">
-                                    <figure>
-                                        <img
-                                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                            alt="Shoes" />
-                                    </figure>
-                                    <div className="card-body">
-                                        <h2 className="card-title">Shoes!</h2>
-                                        <p>If a dog chews shoes whose shoes does he choose?</p>
-
-                                    </div>
-                                </div>
-
-
-                            </div> */}
                             <AllProjects />
-
                         </TabPanel>
 
                         <TabPanel>
-                
                             <Reactjs />
-                
                         </TabPanel>
-                
+
                         <TabPanel>
-                            <h2 className="text-xl font-semibold">JavaScript Content</h2>
-                            <p>Here, you`ll find JavaScript-related topics, tips, and tricks.</p>
+                            
                         </TabPanel>
-                
+
                         <TabPanel>
-                            <h2 className="text-xl font-semibold">HTML/CSS Content</h2>
-                            <p>Explore tutorials and resources about HTML and CSS for web development.</p>
+                            
                         </TabPanel>
                     </div>
                 </Tabs>
