@@ -3,9 +3,6 @@ import React, { useState } from 'react';
 import { Parallax } from 'react-parallax';
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
 import "react-tabs/style/react-tabs.css";
-import liveSite from '@/assets/card/live.png';
-import Image from 'next/image';
-import Link from 'next/link';
 import AllProjects from '../SkillsPorjects/AllProjects';
 import Reactjs from '../SkillsPorjects/Reactjs';
 import JavaScript from '../SkillsPorjects/JavaScript';
@@ -13,7 +10,6 @@ import HtmlCss from '../SkillsPorjects/HtmlCss';
 
 const Projects = () => {
 
-    const [tabIndex, setTabIndex] = useState(0);
 
     return (
         <div className='mt-20 '>
@@ -57,8 +53,7 @@ const Projects = () => {
                     <div className="mt-8 px-4 w-full">
 
                         <TabPanel>
-                            <Reactjs />
-                            
+                            <AllProjects />
                         </TabPanel>
 
                         <TabPanel>
