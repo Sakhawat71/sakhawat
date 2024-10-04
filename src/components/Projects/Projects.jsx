@@ -58,7 +58,6 @@ const Projects = () => {
 
                         <TabPanel>
                             <Reactjs />
-                            {/* <JavaScript /> */}
                             
                         </TabPanel>
 
