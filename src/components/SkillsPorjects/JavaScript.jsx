@@ -6,17 +6,29 @@ const JavaScript = () => {
         {
             id: 1,
             images: [
-                { src: "https://i.ibb.co.com/KrkSPKR/drive-Gear-5.png" },
-                { src: "https://i.ibb.co.com/98tnMPP/drive-Gear-1.png" },
-                { src: "https://i.ibb.co.com/2kQN6Db/drive-Gear-4.png" },
-                { src: "https://i.ibb.co.com/2dS2nDC/drive-Gear-2.png" },
-                { src: "https://i.ibb.co.com/yyM0WH8/drive-Gear-3.png" }
+                { src: "https://i.ibb.co.com/8Nm7kcb/phero-tube-3.png" },
+                { src: "https://i.ibb.co.com/dmbgbxV/phero-tube-1.png" },
+                { src: "https://i.ibb.co.com/G2ddzsk/phero-tube-2.png" },
+                { src: "https://i.ibb.co.com/85bmmdZ/phero-tube-4.png" },
             ],
             alt: "phtube",
             projectName: "PH Tube",
-            projectDis: "React , MongoDB and Express.js is used in this project.Also used are React Router, Context api and CRUD Operations with Mongodb + express.js",
+            projectDis: "",
             liveLink: "https://phero-tube-sabbir71.netlify.app/",
             gitRepo: "https://github.com/Sakhawat71/ph-tube",
+        },
+        {
+            id: 2,
+            images: [
+                { src: "https://i.ibb.co.com/nczJ0yx/summer-sale-3.png" },
+                { src: "https://i.ibb.co.com/sF64SWz/summer-sale-4.png" },
+                { src: "https://i.ibb.co.com/jv5v1Fm/summer-sale-2.png" },
+            ],
+            alt: "Summer sale",
+            projectName: "Summer Sale",
+            projectDis: "",
+            liveLink: "https://b8a5-summer-sale-sakhawat71.netlify.app",
+            gitRepo: "https://github.com/Sakhawat71/summer-sale-ph_a5",
         },
     ]
 
