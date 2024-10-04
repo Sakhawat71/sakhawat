@@ -1,5 +1,4 @@
 "use client"
-import React, { useState } from 'react';
 import { Parallax } from 'react-parallax';
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
 import "react-tabs/style/react-tabs.css";

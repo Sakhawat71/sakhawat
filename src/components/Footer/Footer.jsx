@@ -30,13 +30,13 @@ const Footer = () => {
 
             <div className='flex py-5 w-full items-center justify-center space-x-5'>
 
-                <Link href={"/"} > <FaFacebook className='w-8 h-8 ' />  </Link>
+                <Link href={"https://www.facebook.com/Sakhawat.Hossain.Showrav/"} target='_blank' > <FaFacebook className='w-8 h-8 ' />  </Link>
 
-                <Link href={"/"}> <FaLinkedin className='w-8 h-8 ' />  </Link>
+                <Link href={"https://www.linkedin.com/in/s3h/"} target='_blank'> <FaLinkedin className='w-8 h-8 ' />  </Link>
 
-                <Link href={"/"}> <FaGithub className='w-8 h-8 ' />  </Link>
+                <Link href={"https://github.com/Sakhawat71"} target='_blank'> <FaGithub className='w-8 h-8 ' />  </Link>
 
-                <Link href={"/"}> <GoMail className='w-8 h-8 ' />  </Link>
+                <Link href={"https://mail.google.com/mail/?view=cm&fs=1&to=sakhawat.showrav@gmail.com"} target='_blank'> <GoMail className='w-8 h-8 ' />  </Link>
             </div>
 
             <small>@2020 Sakhawat All Rights Reserved.</small>
