@@ -42,7 +42,10 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1 hidden lg:flex mr-20">
                         {navLink}
                     </ul>
-                    <button className="btn btn-sm">Download CV</button>
+                    <a href="https://drive.usercontent.google.com/download?id=1NvjZG9lhmJ9TSwqZMZtLtMB3cOJHYXZv&export=download&authuser=0&confirm=t&uuid=0efdabbe-6d13-4f36-9e71-ab815ec6491c&at=AN_67v0WEkOn1miNZx1fozvATj-l:1728048830686">
+                        <button className="btn btn-sm">Download CV</button>
+                    </a>
+
                 </div>
             </div>
 
