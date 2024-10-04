@@ -55,7 +55,8 @@ const Projects = () => {
                     <div className="mt-8 px-4 w-full">
 
                         <TabPanel>
-                            <AllProjects />
+                            <Reactjs />
+                            {/* <AllProjects /> */}
                         </TabPanel>
 
                         <TabPanel>

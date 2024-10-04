@@ -13,7 +13,7 @@ const SkillCart = ({ project }) => {
     return (
         <div className="card card-compact bg-base-100 shadow-xl rounded-lg overflow-hidden ">
 
-            <figure className="relative w-full h-56">
+            <figure className="relative w-full h-60">
                 <Carousel
                     showThumbs={false}
                     infiniteLoop={true}
@@ -21,10 +21,10 @@ const SkillCart = ({ project }) => {
                     interval={3000}
                     showStatus={false}
                     stopOnHover={true}
-                    dynamicHeight={false} //false
+                    dynamicHeight={false}
                 >
                     {project?.images?.map((image, index) => (
-                        <div key={index} className="h-56">
+                        <div key={index} className="h-60">
                             <Image
                                 src={image.src}
                                 alt={image.alt}
