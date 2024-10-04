@@ -8,6 +8,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import AllProjects from '../SkillsPorjects/AllProjects';
 import Reactjs from '../SkillsPorjects/Reactjs';
+import JavaScript from '../SkillsPorjects/JavaScript';
 
 const Projects = () => {
 
@@ -64,7 +65,7 @@ const Projects = () => {
                         </TabPanel>
 
                         <TabPanel>
-                            <AllProjects />
+                            <JavaScript />
                         </TabPanel>
 
                         <TabPanel>

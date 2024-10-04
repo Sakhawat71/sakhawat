@@ -50,6 +50,35 @@ const Reactjs = () => {
             liveLink: "https://brandshop-sabbir71.web.app",
             gitRepo: "https://github.com/Sakhawat71/DriveGear-frontend",
         },
+        {
+            id: 4,
+            images: [
+                { src: "https://i.ibb.co.com/rZ8HHvN/event-managment-4.png" },
+                { src: "https://i.ibb.co.com/0fRRzKB/event-managment-6.png" },
+                { src: "https://i.ibb.co.com/GMBg2cF/event-managment-1.png" },
+                { src: "https://i.ibb.co.com/KXf7kZ8/event-managment-2.png" },
+                { src: "https://i.ibb.co.com/DwyQVKg/event-managment-5.png" }
+            ],
+            alt: "Dream Events",
+            projectName: "Dream Events",
+            projectDis: "Private routes using Firebase authentication and PrivateRoute component to ensure that only authenticated users can access event details and profiles.",
+            liveLink: "https://event-managment-sakhawat71.netlify.app",
+            gitRepo: "https://github.com/Sakhawat71/event-management",
+        },
+        {
+            id: 5,
+            images: [
+                { src: "https://i.ibb.co.com/KLkmx4W/donation-campaign-4.png" },
+                { src: "https://i.ibb.co.com/1QdGZrr/donation-campaign-1.png" },
+                { src: "https://i.ibb.co.com/J2j0YT7/donation-campaign-2.png" },
+                { src: "https://i.ibb.co.com/WVBvhJC/donation-campaign-3.png" },
+            ],
+            alt: "Donation Campaign",
+            projectName: "Donation Campaign",
+            projectDis: "The Donation Campaign React App! This application is designed to facilitate and manage donation campaigns for various causes.",
+            liveLink: "https://donation-campaign-sakhawat71.netlify.app",
+            gitRepo: "https://github.com/Sakhawat71/donation-campaign",
+        },
     ]
 
     return (
