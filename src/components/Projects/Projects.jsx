@@ -9,6 +9,7 @@ import Link from 'next/link';
 import AllProjects from '../SkillsPorjects/AllProjects';
 import Reactjs from '../SkillsPorjects/Reactjs';
 import JavaScript from '../SkillsPorjects/JavaScript';
+import HtmlCss from '../SkillsPorjects/HtmlCss';
 
 const Projects = () => {
 
@@ -32,7 +33,7 @@ const Projects = () => {
             <div className="w-full my-20">
                 <Tabs >
                     <TabList
-                        className="relative flex justify-center space-x-8 w-full border-b border-gray-300 "
+                        className="relative flex justify-center space-x-2 md:space-x-8 w-full border-b border-gray-300 "
                     >
 
                         <Tab>
@@ -57,7 +58,8 @@ const Projects = () => {
 
                         <TabPanel>
                             <Reactjs />
-                            {/* <AllProjects /> */}
+                            {/* <JavaScript /> */}
+                            
                         </TabPanel>
 
                         <TabPanel>
@@ -69,7 +71,7 @@ const Projects = () => {
                         </TabPanel>
 
                         <TabPanel>
-                            <AllProjects />
+                            <HtmlCss />
                         </TabPanel>
                     </div>
                 </Tabs>

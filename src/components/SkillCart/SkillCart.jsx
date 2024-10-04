@@ -27,7 +27,7 @@ const SkillCart = ({ project }) => {
                         <div key={index} className="h-60">
                             <Image
                                 src={image.src}
-                                alt={image.alt}
+                                alt={project.alt}
                                 layout="responsive"
                                 width={100}
                                 height={100}
