@@ -9,7 +9,7 @@ const Footer = () => {
 
 
     return (
-        <div className='bg-[#1A1A1A] text-white text-center flex flex-col items-center justify-center py-16'>
+        <div className='bg-[#1A1A1A] text-white text-center flex flex-col items-center justify-center py-10 space-y-3'>
 
             <a href='/Sakhawat_react.jsDev_resume.pdf' download >
                 <button className="btn btn-sm">Download CV</button>

@@ -6,9 +6,9 @@ import { RiMenu2Fill } from "react-icons/ri";
 const Navbar = () => {
 
     const navLink = <>
-        <li><a>About me</a></li>
-        <li><a>Skills</a></li>
-        <li><a>Blog</a></li>
+        <li><a href='/aboutme'>About me</a></li>
+        <li><a href='/skills'>Skills</a></li>
+        <li><a href='/blog'>Blog</a></li>
     </>
 
     return (
@@ -24,7 +24,7 @@ const Navbar = () => {
 
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-black rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        className="menu menu-sm dropdown-content bg-gray-400 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         {navLink}
                     </ul>
                 </div>
