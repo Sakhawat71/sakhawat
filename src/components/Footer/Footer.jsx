@@ -11,13 +11,8 @@ const Footer = () => {
     return (
         <div className='bg-[#1A1A1A] text-white text-center flex flex-col items-center justify-center py-16'>
 
-            <a
-                // href="https://drive.usercontent.google.com/download?id=1NvjZG9lhmJ9TSwqZMZtLtMB3cOJHYXZv&export=download&authuser=0&confirm=t&uuid=0efdabbe-6d13-4f36-9e71-ab815ec6491c&at=AN_67v0WEkOn1miNZx1fozvATj-l:1728048830686"
-                href='https://drive.google.com/file/d/1NvjZG9lhmJ9TSwqZMZtLtMB3cOJHYXZv/view?usp=drive_link'
-                download
-                target='_blank'
-                >
-                <button>View CV</button>
+            <a href='/Sakhawat_react.jsDev_resume.pdf' download >
+                <button className="btn btn-sm">Download CV</button>
             </a>
 
 
