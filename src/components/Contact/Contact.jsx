@@ -13,9 +13,10 @@ const Contact = () => {
     } = useForm()
 
 
-    const onSubmit = (data) => {
-        console.log(data);
+    const onSubmit = (messageInfo) => {
+        console.log(messageInfo);
         reset();
+
     }
 
     return (
@@ -43,7 +44,7 @@ const Contact = () => {
             <div className="flex justify-center my-10">
 
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-6 w-5/6 md:w-full max-w-md">
-                    
+
                     <input
                         placeholder="ENTER YOUR NAME*"
                         {...register("name", { required: "Name is required" })}
@@ -66,7 +67,7 @@ const Contact = () => {
 
                     <textarea
                         placeholder="YOUR MESSAGE*"
-                        {...register("message",{ required: "Message is required" })}
+                        {...register("message", { required: "Message is required" })}
                         className="textarea textarea-bordered w-full border-black focus:outline-none bg-transparent focus:border-black border-l-4 border-b-4 border-t-0 border-r-0 rounded-none"
                         rows="5"
                     />

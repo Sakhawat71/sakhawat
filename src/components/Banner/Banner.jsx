@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import profileImage from '@/assets/dev01.png';
+import profileImage from '@/assets/sabbir71.png';
 import Link from 'next/link';
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
@@ -16,7 +16,7 @@ const Banner = () => {
                 </div>
 
                 <div className='flex space-x-6 justify-center'>
-                    <Link href="https://github.com/Sakhawat71" target="_blank">
+                    <Link href="https://x.com/Sakhawat_71" target="_blank">
                         <FaTwitter className='text-2xl w-9 h-9' />
                     </Link>
                     <Link href="https://github.com/Sakhawat71" target='_blank' rel="noopener noreferrer">
