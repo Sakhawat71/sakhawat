@@ -12,19 +12,19 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar bg-gray-400 h-16 text-balck lg:px-20">
+        <div className="navbar h-16 text-balck lg:px-20 bg-[#1d1d1d] font-montserrat">
 
             <div className="navbar-start">
 
                 <div className="dropdown">
 
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                        <RiMenu2Fill className="h-5 w-5" />
+                        <RiMenu2Fill className="h-5 w-5 text-white" />
                     </div>
 
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-gray-400 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        className="menu menu-sm dropdown-content bg-[#D7D7D7] text-black rounded-box z-[1] mt-3 w-52 p-2 shadow font-bold text-lg">
                         {navLink}
                     </ul>
                 </div>
@@ -39,7 +39,7 @@ const Navbar = () => {
             <div className="navbar-end">
 
                 <div className=" flex items-center space-x-4">
-                    <ul className="menu menu-horizontal px-1 hidden lg:flex mr-20">
+                    <ul className="menu menu-horizontal px-1 hidden lg:flex mr-20 text-white ">
                         {navLink}
                     </ul>
                     <a href='/Sakhawat_react.jsDev_resume.pdf' download >

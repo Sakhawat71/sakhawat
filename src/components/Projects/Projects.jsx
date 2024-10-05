@@ -17,7 +17,7 @@ const Projects = () => {
                 strength={200}
                 className='h-[120px] md:h-[300px] lg:h-[350px]'
             >
-                <div className='h-[350px] flex items-center'>
+                <div className='h-[120px] md:h-[350px] flex items-center'>
                     <div className=' border-white border-[5px] w-72 mx-auto text-center '>
                         <h2 className='text-white font-bold text-xl tracking-[6px] p-3 uppercase '>PORTFOLIO</h2>
                     </div>
